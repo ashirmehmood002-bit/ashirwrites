@@ -11,8 +11,8 @@ const mongoose = require('mongoose');
 const Admin = require('../models/Admin');
 const Article = require('../models/Article');
 
-const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'asher';
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'AsherAdmin@2024!';
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'ashir';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'AshirRana@002';
 
 const sampleArticles = [
   {
