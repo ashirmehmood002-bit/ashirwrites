@@ -20,6 +20,9 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
+// Trust proxy for Vercel (X-Forwarded-For header)
+app.set('trust proxy', 1);
+
 // ── Database ────────────────────────────────────────────────
 connectDB();
 
