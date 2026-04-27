@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>http://localhost:3000/</loc>
+    <loc>https://ashirrana.app/</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -11,21 +11,21 @@
 
   <!-- Articles -->
   <url>
-    <loc>http://localhost:3000/article/why-every-writer-needs-a-commonplace-book</loc>
+    <loc>https://ashirrana.app/article/why-every-writer-needs-a-commonplace-book</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>http://localhost:3000/article/on-reading-slowly-in-a-fast-world</loc>
+    <loc>https://ashirrana.app/article/on-reading-slowly-in-a-fast-world</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>http://localhost:3000/article/the-art-of-writing-simply</loc>
+    <loc>https://ashirrana.app/article/the-art-of-writing-simply</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
