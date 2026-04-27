@@ -2,7 +2,7 @@
 'use strict';
 
 const API = (() => {
-  const BASE = '/api';
+  const BASE = window.location.origin + '/api';
 
   function getToken() { return localStorage.getItem('aw_token'); }
   function setToken(t) { localStorage.setItem('aw_token', t); }
