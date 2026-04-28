@@ -17,11 +17,13 @@ function showPublicChrome() {
 }
 
 // ── Route definitions ────────────────────────────────────────
+console.log('Defining routes...');
 Router.define('/', () => { showPublicChrome(); renderHome(); });
 Router.define('/about', () => { showPublicChrome(); renderAbout(); });
 Router.define('/contact', () => { showPublicChrome(); renderContact(); });
 Router.define('/privacy-policy', () => { showPublicChrome(); renderPrivacyPolicy(); });
 Router.define('/article/([^/]+)', (slug) => { showPublicChrome(); renderArticle(slug); });
+console.log('Routes defined');
 
 // Admin routes — chrome hidden inside each renderer
 Router.define('/admin-secret-panel/login', renderAdminLogin);

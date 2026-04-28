@@ -7,21 +7,26 @@ const Router = (() => {
 
   function define(pattern, handler) {
     routes.push({ pattern: new RegExp('^' + pattern.replace(/:[^/]+/g, '([^/]+)') + '$'), raw: pattern, handler });
+    console.log('Route registered:', pattern);
   }
 
   function navigate(path, push = true) {
     if (push && path !== location.pathname) history.pushState({}, '', path);
     const main = document.getElementById('main-content');
+    console.log('Navigating to:', path);
     for (const route of routes) {
       const m = location.pathname.match(route.pattern);
+      console.log('Checking route:', route.raw, 'Pattern:', route.pattern, 'Match:', m);
       if (m) {
         current = route;
+        console.log('Route matched:', route.raw);
         route.handler(...m.slice(1));
         updateNav();
         window.scrollTo(0, 0);
         return;
       }
     }
+    console.log('No route matched, rendering 404');
     render404();
   }
 
