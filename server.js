@@ -65,7 +65,16 @@ app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(mongoSanitize());                        // Strip MongoDB operators from user input
 
 // ── Static files ────────────────────────────────────────────
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: '1d' }));
+// Cache strategy: HTML (no cache), CSS/JS/images (1 day)
+app.use(express.static(path.join(__dirname, 'public'), { 
+  maxAge: '1d',
+  setHeaders: (res, path) => {
+    // Don't cache HTML files (index.html, etc.)
+    if (path.endsWith('.html')) {
+      res.set('Cache-Control', 'public, max-age=0, must-revalidate');
+    }
+  }
+}));
 
 // ── API Routes ───────────────────────────────────────────────
 app.use('/api/articles', articleRoutes);

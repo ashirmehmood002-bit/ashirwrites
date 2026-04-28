@@ -28,8 +28,8 @@ function renderContact() {
               <a href="https://wa.me/923260286859" target="_blank" rel="noopener noreferrer" class="contact-link">+92 326 0286859</a>
             </div>
             <div class="contact-item">
-              <h3 class="contact-label">Instagram</h3>
-              <a href="https://instagram.com/ashiir002" target="_blank" rel="noopener noreferrer" class="contact-link">+92 326 0286859</a>
+              <h4 class="contact-label">Instagram</h4>
+              <a href="https://instagram.com/ashiir002" target="_blank" rel="noopener noreferrer" class="contact-link">@ashiir002</a>
             </div>
           </div>
           
