@@ -539,6 +539,15 @@ main { flex: 1; }
   margin-bottom: 2.5rem;
 }
 
+.about-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 2.5rem;
+  border-radius: 4px;
+}
+
 .about-body {
   font-size: 1.05rem;
   line-height: 1.85;

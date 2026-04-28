@@ -8,6 +8,7 @@ function renderAbout() {
       <p class="about-eyebrow">About the writer</p>
       <h1 class="about-title">Ashir Mehmood</h1>
       <div class="about-divider"></div>
+      <img src="/ashir.jpeg" alt="Ashir Mehmood" class="about-image" />
       <div class="about-body">
         <p><strong>I write to think.</strong> These essays are the product of a restless curiosity — an attempt to understand what it means to live deliberately, to read deeply, and to say something true.</p>
         <p>I'm interested in the craft of writing, the practice of reading, and the ideas that quietly reshape how we see the world. I don't have all the answers, but I've found that asking better questions is usually enough to get started.</p>
