@@ -49,7 +49,7 @@ async function renderHome() {
     <section class="hero">
       <span class="hero-eyebrow">A writer's corner</span>
       <h1 class="hero-title">Words that make you<br/><em>think twice</em></h1>
-      <p class="hero-subtitle">Essays on writing, reading, and the examined life — by Ashir Mahmood.</p>
+      <p class="hero-subtitle">Essays on writing, reading, and the examined life — by Ashir Mehmood.</p>
     </section>
     <div class="section-header">
       <h2 class="section-title">Latest Articles</h2>

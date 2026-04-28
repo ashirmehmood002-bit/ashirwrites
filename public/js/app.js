@@ -19,6 +19,8 @@ function showPublicChrome() {
 // ── Route definitions ────────────────────────────────────────
 Router.define('/', () => { showPublicChrome(); renderHome(); });
 Router.define('/about', () => { showPublicChrome(); renderAbout(); });
+Router.define('/contact', () => { showPublicChrome(); renderContact(); });
+Router.define('/privacy-policy', () => { showPublicChrome(); renderPrivacyPolicy(); });
 Router.define('/article/([^/]+)', (slug) => { showPublicChrome(); renderArticle(slug); });
 
 // Admin routes — chrome hidden inside each renderer

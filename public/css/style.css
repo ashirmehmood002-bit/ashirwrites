@@ -1115,6 +1115,176 @@ main { flex: 1; }
 
 .modal-actions { display: flex; gap: 0.75rem; justify-content: flex-end; }
 
+/* ── Contact Page ─────────────────────────────────────────── */
+.contact-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+.contact-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  color: var(--ink);
+}
+
+.contact-divider {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 2.5rem;
+}
+
+.contact-body {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--ink-muted);
+}
+
+.contact-intro {
+  margin-bottom: 2.5rem;
+  color: var(--ink);
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  padding: 1.5rem;
+  background: var(--paper-warm);
+  border-left: 3px solid var(--accent);
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.contact-link {
+  font-size: 1.05rem;
+  color: var(--ink);
+  border-bottom: 1px solid var(--accent);
+  transition: color var(--transition);
+}
+
+.contact-link:hover {
+  color: var(--accent);
+}
+
+.contact-note {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+/* ── Privacy Policy Page ──────────────────────────────────── */
+.privacy-policy-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+.policy-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  color: var(--ink);
+}
+
+.policy-divider {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 2.5rem;
+}
+
+.policy-body {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--ink-muted);
+}
+
+.policy-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.policy-section:last-child {
+  border-bottom: none;
+}
+
+.policy-subtitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  color: var(--ink);
+}
+
+.policy-subtitle:first-child {
+  margin-top: 0;
+}
+
+.policy-subheading {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+}
+
+.policy-body p {
+  margin-bottom: 1.25rem;
+}
+
+.policy-body a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  transition: color var(--transition);
+}
+
+.policy-body a:hover {
+  color: var(--accent-hover);
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.footer-link {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 768px) {
   html { font-size: 16px; }
