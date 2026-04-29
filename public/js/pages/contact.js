@@ -15,7 +15,7 @@ function renderContact() {
           <div class="contact-info">
             <div class="contact-item">
               <h3 class="contact-label">Email</h3>
-              <a href="mailto:ashir@ashirwrites.com" class="contact-link">ashir@ashirwrites.com</a>
+              <a href="mailto:ashir@ashirwrites.com" class="contact-link">contact@ashirwrites.com</a>
             </div>
             
             <div class="contact-item">
