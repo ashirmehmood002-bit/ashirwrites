@@ -1,6 +1,4 @@
 /* public/js/pages/home.js */
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4585086264373921"
-     crossorigin="anonymous"></script>
 'use strict';
 
 function formatDate(iso) {
