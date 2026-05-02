@@ -88,11 +88,17 @@ async function loadArticlesTable() {
         <td style="color:var(--ink-muted);font-size:0.85rem">${new Date(a.createdAt).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}</td>
         <td>
           <div class="admin-actions">
-            <button class="admin-btn admin-btn-ghost" onclick="Router.navigate('/admin-secret-panel/edit/${a._id}')">Edit</button>
+            <button class="admin-btn admin-btn-ghost" data-edit="${a._id}">Edit</button>
             <button class="admin-btn admin-btn-danger" data-delete="${a._id}">Delete</button>
           </div>
         </td>
       </tr>`).join('');
+
+    document.querySelectorAll('[data-edit]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        Router.navigate(`/admin-secret-panel/edit/${btn.dataset.edit}`);
+      });
+    });
 
     document.querySelectorAll('[data-delete]').forEach(btn => {
       btn.addEventListener('click', () => {
